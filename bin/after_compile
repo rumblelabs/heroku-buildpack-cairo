@@ -1,5 +1,5 @@
 export CPPPATH="$1/vendor/cairo-1.12.8/include:$1/vendor/pixman-0.28.0/include:$CPPPATH"
-export CPPATH="$1/vendor/cairo-1.12.8/include:$1/vendor/pixman-0.28.0/include:$CPPATH"
+export CPATH="$1/vendor/cairo-1.12.8/include:$1/vendor/pixman-0.28.0/include:$CPATH"
 export LIBRARY_PATH="$1/vendor/cairo-1.12.8/lib:$1/vendor/pixman-0.28.0/lib:$LIBRARY_PATH"
 export PKG_CONFIG_PATH="$1/vendor/cairo-1.12.8/lib/pkgconfig:$1/vendor/pixman-0.28.0/lib/pkgconfig:$PKG_CONFIG_PATH"
-export CFLAGS="-I$1/vendor/cairo-1.12.8/include:-I$1/vendor/pixman-0.28.0/include:$CPPATH"
+export CFLAGS="-I$1/vendor/cairo-1.12.8/include:-I$1/vendor/pixman-0.28.0/include:$CFLAGS"
